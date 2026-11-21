@@ -1,0 +1,21 @@
+CARA MEMBUAT APK ZXZ PARENT MONITOR
+
+Catatan:
+- File APK belum bisa dikompilasi langsung di lingkungan pembuatan ZIP ini karena Android SDK dan Gradle tidak tersedia.
+- Workflow GitHub Actions sudah ditambahkan untuk membangun APK debug secara otomatis.
+- APK debug dapat dipasang untuk pengujian. Ini bukan APK release bertanda tangan untuk distribusi Play Store.
+- Fitur kamera jarak jauh/WebRTC pada source saat ini masih berupa fondasi/placeholder dan belum melakukan streaming kamera.
+
+LANGKAH:
+1. Ekstrak ZIP.
+2. Upload seluruh isi folder proyek ke repository GitHub baru.
+3. Buka repository di GitHub.
+4. Masuk tab Actions.
+5. Pilih workflow "Build Android APK".
+6. Tekan "Run workflow".
+7. Tunggu sampai proses selesai.
+8. Buka hasil workflow, bagian Artifacts.
+9. Download "ZXZ-PARENT-MONITOR-DEBUG-APK.zip", lalu ekstrak.
+10. Install file app-debug.apk di Android dan izinkan instalasi dari sumber tersebut bila diminta.
+
+Jika workflow gagal, buka log job "Build debug APK" dan kirimkan error merahnya untuk diperbaiki.
